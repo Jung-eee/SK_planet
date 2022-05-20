@@ -9,6 +9,7 @@ body.subpage {
         flex-grow: 0;
         box-sizing: border-box;
         padding-right: 50px;
+        margin-top: 25px;
         ul {
           li {
             border-bottom: 1px solid $borderColorPrimary;
@@ -41,8 +42,7 @@ body.subpage {
          span{
            position: relative;
            display: inline-block;
-           padding-bottom: 8px;
-           line-height: 43px;
+           line-height: 75px;
            &:after {
              content: '';
              position: absolute;
@@ -63,10 +63,18 @@ body.subpage {
          & + .inner {
            margin-top: 50px;
            padding-top: 50px;
-           border-top:  1px solid $borderColorPrimary;
+           border-top:  1px solid #666;
          }
          .box {
            flex-wrap: wrap;
+         }
+         .title {
+           margin-bottom: 20px;
+         }
+         .co {
+           margin-top: 40px;
+           text-align: center;
+           font-size: $fontSizeSmall;
          }
        }
 
