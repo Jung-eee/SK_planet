@@ -36,9 +36,6 @@ body.subpage {
 
        //sub-page title 영역
        .sub-title {
-         & + .inner {
-
-         }
          span{
            position: relative;
            display: inline-block;
@@ -68,8 +65,64 @@ body.subpage {
          .box {
            flex-wrap: wrap;
          }
+         .items img {
+           margin-bottom: 30px;
+         }
+         .items p {
+           text-align: center;
+           color: #000;
+           line-height: 1.8;
+           font-size: 16px;
+         }
          .title {
            margin-bottom: 20px;
+           & + p {
+            text-align: left;
+           }
+           & + ul {
+             color: #333;
+             float: right;
+             border-top: 1px solid #666;
+             border-bottom: 1px solid #666;
+             width: 842px;
+           }
+         }
+         .cover {
+           padding: 35px 19px 32px;
+           border-top: 1px solid #ccc;
+           height: 50px;
+           &:first-child {
+             border-top: none;
+           }
+           ul {
+            float: left;
+            margin: 0 0 40px 40px;
+           }
+         }
+         .year {
+           float: left;
+           font-weight: bold;
+           font-size: 18px;
+         }
+         .hisory {
+           margin-top: 14px;
+           &:first-child {
+             margin-top: 0;
+           }
+         }
+         .month {
+           font-weight: bold;
+           font-size: 16px;
+           display: inline-block;
+           width: 35px;
+           text-align: right;
+           margin-right: 20px;
+           float: left;
+         }
+         .text {
+           width: 640px;
+           font-size: 14px;
+           color: #666;
          }
          .co {
            margin-top: 40px;
