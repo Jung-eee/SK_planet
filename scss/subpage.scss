@@ -86,6 +86,17 @@ body.subpage {
              border-bottom: 1px solid #666;
              width: 842px;
            }
+           .title1 {
+             float: left;
+             font-size: 36px;
+             font-weight: 600;
+           }
+           .data {
+             margin-bottom: 23px;
+             font-size: 20px;
+             color: #f48024;
+             font-weight: 600;
+           }
          }
          .cover {
            padding: 35px 19px 32px;
@@ -128,6 +139,46 @@ body.subpage {
            margin-top: 40px;
            text-align: center;
            font-size: $fontSizeSmall;
+         }
+         .sub-tab {
+           width: 100%;
+           margin-bottom: 150px;
+         }
+         .button-tab {
+           display: block;
+           width: calc(25% - 2px);
+           height: 63px;
+           position: relative;
+           float: left;
+           border-width: 1px 1px 1px 0;
+           border-style: solid;
+           border-color: #dcdddf;
+           &:first-of-type {
+              border-left-width: 1px
+           }
+         }
+         .button {
+           display: block;
+           width: auto;
+           height: auto;
+           line-height: 68px;
+           background-color: transparent;
+           position: absolute;
+           left: -1px;
+           bottom: -1px;
+           right: -1px;
+           top: -1px;
+           font-size: 20px;
+           text-align: center;
+           color: #666;
+           &:hover {
+             background-color: #e51837;
+             color: #fff;
+           }
+         }
+         .sub {
+           background-color: #e51837;
+           color: #fff;
          }
        }
 
